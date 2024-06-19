@@ -90,7 +90,7 @@ const Register = () => {
       });
     }
   }
-  const [gender, setGender] = useState('No sex');
+  const [gender, setGender] = useState('Male');
 
   // Handle change event
   const handleChange = (event) => {
@@ -130,8 +130,7 @@ const Register = () => {
               </Box>
             </Box>
           </Box>
-          <Select className='input1' color='white' h='70px' value={gender} onChange={handleChange}>
-            <option value="Gender">No sex</option>
+          <Select className='input1' placeholder='пол' color='white' h='70px' value={gender} onChange={handleChange}>
             <option className='option' value="male">Male</option>
             <option className='option' value="female">Female</option>
           </Select>

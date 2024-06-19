@@ -28,14 +28,14 @@ const Contact = () => {
                         </Box>
                         <Box>
                             <Heading fontWeight={'600'} fontSize={'30px'}>Телефон</Heading>
-                            <Text pt={'7px'} color={'#847BFF'}><a href="">Написать в Whatsapp (Караганда) </a> <a href="">Написать в Whatsapp <br /> (Абай / Топар)</a></Text>
+                            <Text pt={'7px'} color={'#847BFF'}><a href="https://api.whatsapp.com/send/?phone=77757524176&text&type=phone_number&app_absent=0">Написать в Whatsapp (Караганда) </a> <a href="https://api.whatsapp.com/send/?phone=77086550262&text&type=phone_number&app_absent=0">Написать в Whatsapp <br /> (Абай / Топар)</a></Text>
                         </Box>
                     </Box>
 
                     <Box>
                         <Box>
                             <Heading fontWeight={'600'} fontSize={'30px'}>Социальные сети</Heading>
-                            <Text pt={'7px'} color={'#847BFF'}><a href="">Instagram</a></Text>
+                            <Text pt={'7px'} color={'#847BFF'}><a href="https://www.instagram.com/2k.cargo">Instagram</a></Text>
                         </Box>
                     </Box>
 

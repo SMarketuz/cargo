@@ -59,7 +59,9 @@ const Login = () => {
 
   return (
     <Box>
+      <Box h={'12vh'}>
       <Header />
+      </Box>
       <Box
         bg="#151B27"
         h="88vh"
@@ -95,7 +97,7 @@ const Login = () => {
               <Text color={'white'}>Remember</Text>
            
           </Box>
-          <Button className='buttonReg' disabled onClick={handlePost}>Зарегистрироватъся  {loading ? <Spinner /> : '' }</Button>
+          <Button className='buttonReg' disabled onClick={handlePost}>Войти  {loading ? <Spinner /> : '' }</Button>
 
           <Link to={'/register'} style={{color:'#007BFF', fontSize:'16px'}}>Forgot Password?</Link>
         </Box>
