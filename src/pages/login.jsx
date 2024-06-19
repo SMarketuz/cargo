@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { registerLog } from "../assets";
 
 const Login = () => {
   const [value, setValue] = useState({ password: "", number: "" });
@@ -55,7 +56,7 @@ const Login = () => {
           className="cregister"
           w={{ md: "800px", base: "90%" }}
         >
-          <Image src="../src/assets/registerLog.png" borderRadius="22px" w="100%" />
+          <Image src={registerLog} borderRadius="22px" w="100%" />
           <input
             className="input1"
             onChange={(e) => setValue({ ...value, number: e.target.value })}

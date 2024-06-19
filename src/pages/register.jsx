@@ -8,6 +8,7 @@ import { api } from '../api';
 import { useNavigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Cookies from 'js-cookie';
+import { RegisterImg } from '../assets';
 
 
 const Register = () => {
@@ -88,7 +89,7 @@ const Register = () => {
         <Box className='TrainImage'>
         </Box>
         <Box className='cregister' zIndex='999' w={{ md: '800px', base: '90%' }}>
-          <Image src='../src/assets/Regist.png' borderRadius='22px' w='100%' />
+          <Image src={RegisterImg} borderRadius='22px' w='100%' />
           <input className='input1' type='text' placeholder='Ваш пароли' onChange={(e) => setValue({ ...value, password: e.target.value })} value={value.password} />
           <input className='input1' type='text' placeholder='Ваш имя' onChange={(e) => setValue({ ...value, name: e.target.value })} value={value.name} />
           <input className='input1' type='text' placeholder='Ваш номер' onChange={(e) => setValue({ ...value, number: e.target.value })} value={value.number} />
