@@ -51,7 +51,7 @@ export default function AddProduct() {
             </Box>
 
             <Box display='flex' alignItems='center' justifyContent='center'>
-                <Box display='flex' alignItems='' flexDirection='column' justifyContent='center' h='65.5vh' gap='7px'>
+                <Box display='flex' alignItems='' flexDirection='column' justifyContent='center' h='65.2vh' gap='7px'>
                     <Box>
                         <Text fontSize='32px' textAlign='start' color='#212519' margin='0px 0px 8px' mt='25px'>Добавление трек-кода</Text>
                     </Box>
