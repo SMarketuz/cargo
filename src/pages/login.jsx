@@ -99,7 +99,7 @@ const Login = () => {
           </Box>
           <Button className='buttonReg' disabled onClick={handlePost}>Войти  {loading ? <Spinner /> : '' }</Button>
 
-          <Link to={'/register'} style={{color:'#007BFF', fontSize:'16px'}}>Forgot Password?</Link>
+          <Link to={'/register'} style={{color:'#007BFF', fontSize:'16px'}}>Register?</Link>
         </Box>
       </Box>
     </Box>
