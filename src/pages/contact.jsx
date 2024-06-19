@@ -8,7 +8,7 @@ import Cookies from 'js-cookie';
 const Contact = () => {
     return (
         <Box className='Contact'>
-            <Header />
+            <Box h={'12vh'}><Header /></Box>
             {/* User  */}
             <Box bg='#D1ECF1' padding='12px 20px' display='flex' alignItems='center' margin='0px 0px 16px'>
                 <Text fontSize='15px' color='#0C5460'>Привет, <span className='UserName'>{Cookies.get('number')}</span>!</Text>

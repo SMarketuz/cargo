@@ -39,7 +39,7 @@ export default function PersonalPage() {
 
     return (
         <Box>
-            <Header />
+            <Box h={'12vh'}><Header /></Box>
 
              {/* User  */}
              <Box bg='#D1ECF1' padding='12px 20px' display='flex' alignItems='center' margin='0px 0px 16px'>

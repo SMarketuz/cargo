@@ -48,12 +48,15 @@ export default function Product() {
 
     return (
         <Box>
+            <Box h={'12vh'}>
             <Header />
+
+            </Box>
             {/* User  */}
             <Box bg='#D1ECF1' padding='12px 20px' display='flex' alignItems='center' margin='0px 0px 16px'>
                 <Text fontSize='15px' color='#0C5460'>Привет, <span className='UserName'>{Cookies.get('number')}</span>!</Text>
             </Box>
-            <Box display='flex' flexDirection='column' alignItems='center' h={'100%'} >
+            <Box display='flex' flexDirection='column' alignItems='center' maxH={'100%'} minH={'65.2vh'} >
                 {loading ? <Box display={'flex'} alignItems={'center'} justifyContent={'center'} minH={'65.2vh'}><Spinner
   thickness='4px'
   speed='0.65s'
