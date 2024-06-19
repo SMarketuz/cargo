@@ -3,7 +3,7 @@ import transparent from './transparent.png'
 import colorful from './colorful.png'
 import white from './white.png'
 import fon from './fon.jpg'
-import RegisterImg from './Register.png'
+import RegisterImg from './Regist.png'
 import registerLog from './registerLog.png'
 
 
