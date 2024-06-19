@@ -21,11 +21,7 @@ const Contact = () => {
                             <Heading fontWeight={'400'} fontSize={'25px'}>Контакты</Heading>
                             <Text pt={'7px'}>Свяжитесь с нами по следующим контактам:</Text>
                         </Box>
-                        <Box>
-                            <Heading fontWeight={'600'} fontSize={'30px'}>Адрес</Heading>
-                            <Text pt={'7px'}><b>Наш офис</b></Text>
-                            <Text>Ерубаева 50а, 109 кабинет</Text>
-                        </Box>
+                       
                         <Box>
                             <Heading fontWeight={'600'} fontSize={'30px'}>Телефон</Heading>
                             <Text pt={'7px'} color={'#847BFF'}><a href="https://api.whatsapp.com/send/?phone=77757524176&text&type=phone_number&app_absent=0">Написать в Whatsapp (Караганда) </a> <a href="https://api.whatsapp.com/send/?phone=77086550262&text&type=phone_number&app_absent=0">Написать в Whatsapp <br /> (Абай / Топар)</a></Text>
@@ -48,10 +44,7 @@ const Contact = () => {
             <Box bg='#343A40' display='flex' flexDirection='column' alignItems='center' justifyContent='center'  mt='30px' height='13vh'>
                 <Text color='white' fontSize='14px'>Наши социальные сети</Text>
                 <Box display='flex' alignItems='center' gap='20px' mt='20px'>
-                    <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
-                        <FaInstagram />
-                        <Text>Instagram</Text>
-                    </Box>
+                  
 
                     <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
                         <FaWhatsapp />

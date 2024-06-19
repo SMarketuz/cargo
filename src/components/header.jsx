@@ -39,7 +39,7 @@ const Header = () => {
           <Box display={{base: 'none', md: 'flex'}} alignItems={'center'} gap={'1.5rem'} >
        <Link to={'/PersonalPage'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Личный кабинет</Heading></Link>
        <Link to={'/Product'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Мои Товары</Heading></Link>
-       <Link to={'/AddProduct'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Добавить код</Heading></Link>
+       <Link to={'/AddProduct'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Добавить трек-код</Heading></Link>
        <Link to={'/contact'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Контакты</Heading></Link>
           </Box>
           <Box display={{base: 'flex', md: 'none'}} alignItems={'center'} gap={'1rem'} >
@@ -62,7 +62,9 @@ const Header = () => {
           <Box display={'flex'} justifyContent='center' pt='40px' gap={'1.5rem'} flexDirection='column'>
        <Link to={'/PersonalPage'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Личный кабинет</Heading></Link>
        <Link to={'/Product'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Мои Товары</Heading></Link>
-       <Link to={'/AddProduct'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Добавить код</Heading></Link>
+       <Link to={'/AddProduct'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Добавить трек-код</Heading></Link>
+       <Link to={'/contact'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Контакты</Heading></Link>
+
           </Box>
           </DrawerBody>
         </DrawerContent>

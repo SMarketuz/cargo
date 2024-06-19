@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/button'
 import { Box, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
-import { fon } from '../assets'
+import { cargo, fon } from '../assets'
 import PersonCard from '../components/PersonCard'
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
@@ -27,13 +27,13 @@ export default function PersonalPage() {
         
       };
      const handleCopy3 = () => {
-        alert('Копировано текст: 崔T826-1307karaganda')
+        alert(`Копировано текст: 铁锤374-${Cookies.get('userId')}`)
         copy("崔T826-1307karaganda");
         
       };
      const handleCopy4 = () => {
-        alert('Копировано текст: 广东省佛山市南海区里水镇草场海南洲工业园76号杨刚仓库转 崔T826-1307karaganda')
-        copy("广东省佛山市南海区里水镇草场海南洲工业园76号杨刚仓库转 崔T826-1307karaganda");
+        alert(`Копировано текст: 里水镇草场海南洲工业园76号杨刚仓库转铁锤 374-${Cookies.get('userId')}`)
+        copy(`里水镇草场海南洲工业园76号杨刚仓库转铁锤 374-${Cookies.get('userId')}`);
         
       };
 
@@ -51,15 +51,15 @@ export default function PersonalPage() {
                 <Box display='flex' flexDirection='column' >
                     <Text fontSize='24px' textAlign='start' color='#212519' margin='0px 0px 8px' mt='25px'>Заполнение адреса на китайском маркетплейсе:</Text>
                     <ol style={{ fontSize: '14px' }}>
-                        <li ><strong>1. <span className='TextName'> 崔T826-{Cookies.get('userId')}karaganda</span></strong>- ваш личный код, полученный в нашем карго. (по этому номеру вы будете получать  заказы)  <span onClick={handleCopy3} style={{ cursor: 'pointer' }}>📋</span></li>
-                        <li >2.Указываем адрес склада:<strong className='TextName'>15045507371</strong> <span onClick={handleCopy}  style={{ cursor: 'pointer' }}>📋</span> </li>
-                        <li >3.Копируем и вставляем иероглифы<span className='TextName'>广东省 佛山市 南海区</span> <span onClick={handleCopy2} style={{ cursor: 'pointer' }} >📋</span></li>
-                        <li >4.Указываем подробный адрес склада: <span className="TextName"> 广东省佛山市南海区里水镇草场海南洲工业园76号杨刚仓库转 崔T826-1307karaganda </span> <span onClick={handleCopy4} style={{ cursor: 'pointer' }} >📋</span></li>
+                        <li >1.Личный код полученный в нашем карго :  <span className='TextName'>铁锤374-{Cookies.get('userId')} </span>( по этому номеру вы будете получать свои заказы )<span onClick={handleCopy3} style={{ cursor: 'pointer' }}>📋</span></li>
+                        <li >2.Адрес склада:<strong className='TextName'>15045507371</strong> <span onClick={handleCopy}  style={{ cursor: 'pointer' }}>📋</span> </li>
+                        <li >3.Иероглифы вставляем в ручную<span className='TextName'>广东省 佛山市 南海区</span> <span onClick={handleCopy2} style={{ cursor: 'pointer' }} >📋</span></li>
+                        <li >4.Указываем подробный адрес склада :<span className="TextName"> 里水镇草场海南洲工业园76号杨刚仓库转铁锤 374-{Cookies.get('userId')} </span> <span onClick={handleCopy4} style={{ cursor: 'pointer' }} >📋</span></li>
                     </ol>
                 </Box>
 
                 <Box display='flex' alignItems='center' justifyContent='center'>
-                    <Image width={{ md: '765px', base: '100%' }} height={{ md: '780px', base: 'auto' }} mt='30px' src={fon} />
+                    <Image width={{ md: '765px', base: '100%' }} height={{ md: '780px', base: 'auto' }} mt='30px' src={cargo} />
                 </Box>
 
                 {/* Personal Cards  */}

@@ -4,7 +4,7 @@ import { Box, Image, Link, Text } from '@chakra-ui/react'
 
 export default function PersonCard({bg, hoverBg, text, icon  }) {
   return (
-    <Link _hover="none">
+    <Link href="https://chat.whatsapp.com/DDecveg3dtqK37nLoI1Ktx" _hover="none">
       <Box
         bg= {`${bg}`}
         _hover={{ bg: `${hoverBg}`}}

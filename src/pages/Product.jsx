@@ -53,7 +53,7 @@ export default function Product() {
             <Box bg='#D1ECF1' padding='12px 20px' display='flex' alignItems='center' margin='0px 0px 16px'>
                 <Text fontSize='15px' color='#0C5460'>Привет, <span className='UserName'>{Cookies.get('number')}</span>!</Text>
             </Box>
-            <Box display='flex' flexDirection='column' alignItems='center' minH={'65.2vh'}>
+            <Box display='flex' flexDirection='column' alignItems='center' h={'100%'} >
                 {loading ? <Box display={'flex'} alignItems={'center'} justifyContent={'center'} minH={'65.2vh'}><Spinner
   thickness='4px'
   speed='0.65s'
@@ -71,7 +71,7 @@ export default function Product() {
                 <Box display='flex' alignItems='center' flexDirection='column' gap={'30px'}>
                     {data.length && data.map((item, i) => (
                         <Box key={i} display={Cookies.get('user_id') === item.userId._id ? 'block' : 'none'}>
-                            <Box border='1px solid #DFDFDF' padding='20px' borderRadius='8px' display='flex' flexDirection='column' gap='20px' width={{ md: '800px', base: '100%' }} h='60vh'>
+                            <Box border='1px solid #DFDFDF' padding='20px' borderRadius='8px' display='flex' flexDirection='column' gap='20px' width={{ md: '800px', base: '100%' }} h='100%'>
                                 <Box display='flex' alignItems='center' justifyContent='space-between'>
                                     <Box>
                                         <Text fontSize='20px' color='#212529'>Трек-код: {item.trecCode}</Text>

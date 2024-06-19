@@ -23,7 +23,7 @@ const Homepage = () => {
                 <Box pt={'80px'} className='boxes'>
                   <Box w={''} h={'60px'} className='bg border' borderRadius={'6px'} display={'flex'} alignItems={'center'} pl={'30px'} gap={'20px'} style={{borderBottom: '1px solid #104A3E'}} border-bottom={'#104A3E'}>
                     <FaUserPen color='#63717F' size={'25px'} />
-                    <a href='https://api.whatsapp.com/send/?phone=77757524176&text&type=phone_number&app_absent=0'><Text className='boxtxt' fontSize={'20px'} fontWeight={'600'} color={'#fff'}>Свяжитесь с менеджером</Text></a>
+                    <a href=' https://wa.me/77074691537'><Text className='boxtxt' fontSize={'20px'} fontWeight={'600'} color={'#fff'}>Свяжитесь с менеджером</Text></a>
                   </Box>
                   <Box w={''} h={'60px'} className='bg' borderRadius={'6px'} display={'flex'} alignItems={'center'} pl={'30px'} gap={'20px'}>
                     <FaMapLocationDot color='#04D88C' size={'25px'} />
