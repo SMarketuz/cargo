@@ -25,7 +25,7 @@ const Login = () => {
               position: "top-right",
             });
             Cookies.set("token", res.data.token);
-            Cookies.set("user_id", res.data.user_id);
+            localStorage.setItem("user_id", res.data.user_id);
             Cookies.set("number", value.number);
             navigate('/')
           } else {
