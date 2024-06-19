@@ -23,7 +23,7 @@ const Register = () => {
   const generateCaptcha = () => {
     const charsArray =
       "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*";
-    const lengthOtp = 6;
+    const lengthOtp = 8;
     let captchaArray = [];
 
     while (captchaArray.length < lengthOtp) {
@@ -115,7 +115,7 @@ const Register = () => {
                 <form onSubmit={handleSubmit} style={{ width: '100%' }} >
                   <Box className="captchaParent" gap={'20px'}>
                     <div id="captcha-container">
-                      <canvas ref={canvasRef} id="captcha" width="100" height="50"></canvas>
+                      <canvas ref={canvasRef} id="captcha" width="130" height="50"></canvas>
                     </div>
                     <input
                       type="text"
