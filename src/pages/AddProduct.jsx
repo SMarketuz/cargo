@@ -65,8 +65,8 @@ export default function AddProduct() {
                             <Input value={value.name} onChange={(e) => setValue({...value, name: e.target.value})} border='1px solid black' />
                         </Box>
                     </Box>
-                    <Box display='flex' alignItems='start' justifyContent='start' mt='20px' px={{ md: '0', base: '12px' }}>
-                        <Button bg='#007BFF' _hover={{ bg: '#005FC4' }} color='white' fontWeight='400' onClick={handlePost}>Добавить</Button>
+                    <Box display='flex' alignItems='flex-start' w={'100%'} justifyContent='flex-start' mt='20px' >
+                        <Button bg='#007BFF' _hover={{ bg: '#005FC4' }} m={0} color='white' fontWeight='400' onClick={handlePost}>Добавить</Button>
                     </Box>
                 </Box>
             </Box>

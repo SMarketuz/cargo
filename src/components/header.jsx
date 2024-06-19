@@ -29,10 +29,10 @@ const Header = () => {
         <Box>
           <Link to={'/'}><img src={white} width={"150px"} className='logo' alt="img" /></Link>
         </Box>
-     {show ?     <Box display={'flex'} alignItems={'center'} gap={'3rem'} className='rparent'>
+     {show ?     <Box display={'flex'} alignItems={'center'}  gap={'3rem'} className='rparent'>
        <Link to={'/register'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'24px', base: '20px'}} fontWeight={'600'}>Регистрация</Heading></Link>
        <Link to={'/login'}>
-       <Button className='btn' w={{lg:'190px',base: '140px'}} h={{lg:'57px',base: '45px'}} bg={'#00DA84'} borderRadius={'7px'} style={{fontWeight: '700'}} fontSize={{lg:'22px', base: '17px'}}>Войти</Button>
+       <Button className='btn' w={{lg:'190px',base: '100px'}} h={{lg:'57px',base: '45px'}} bg={'#00DA84'} borderRadius={'7px'} style={{fontWeight: '700'}} fontSize={{lg:'22px', base: '17px'}}>Войти</Button>
        </Link>
         </Box> : 
         <Box >

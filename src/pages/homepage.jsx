@@ -3,6 +3,7 @@ import Header from '../components/header'
 import { Box, Heading, Text } from '@chakra-ui/react'
 import { FaUserPen } from "react-icons/fa6";
 import { FaMapLocationDot } from "react-icons/fa6";
+import { main } from '../assets';
 
 const Homepage = () => {
   return (
@@ -15,7 +16,7 @@ const Homepage = () => {
 
             <Box  display={'flex'} justifyContent={{lg:'space-between', base: 'center'}} flexDirection={{base:'column-reverse', lg: 'row'}} alignItems={'center'} gap={{lg:'80px',base: '10px'}} w={'100%'}>
               <Box display={'flex'} flexDirection={'column'} gap={'10px'}  className='left' w={'40%'} >
-                <Heading className='heading' color={'#fff'} fontSize={'70px'}>T&G Cargo</Heading>
+                <Heading className='heading' color={'#fff'} fontSize={'70px'}>RITM Cargo</Heading>
                 <Text pt={'40px'} color={'#707481'}  fontSize={'22px'} className='text' fontWeight={'700'}>Ваша посылка в надежных руках: Отслеживайте, Узнавайте, Следите за своими доставками с нашим сервисом отслеживания посылок.</Text>
 
                 <Box pt={'80px'} className='boxes'>
@@ -33,7 +34,7 @@ const Homepage = () => {
               </Box>
 
               <Box  >
-                <img src="https://tgcargo.kz/images/main-fon.jpg" className='img' alt="" />
+                <img src={main} className='img' alt="" />
               </Box>
             </Box>
 
@@ -46,7 +47,7 @@ const Homepage = () => {
               </Box>
 
               <Box>
-                <Text className='footertext' color={'#707481'} w={'560px'} fontSize={'22px'} fontWeight={'700'}>© T&GCargo.kz, 2023. Все права защищены.</Text>
+                <Text className='footertext' color={'#707481'} w={'560px'} fontSize={'22px'} fontWeight={'700'}>© RITMCargo.kz, 2024. Все права защищены.</Text>
               </Box>
             </Box>
           </Box>

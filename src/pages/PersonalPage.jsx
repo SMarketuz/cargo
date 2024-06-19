@@ -87,7 +87,7 @@ export default function PersonalPage() {
                     </Box>
 
                     <Box display='flex' alignItems='start' justifyContent='start' mt='20px' px={{ md: '0', base: '12px' }}>
-                        <Button bg='#FFC107' _hover={{ bg: '#BB8E05' }} fontWeight='400' onClick={Delete}>Выход с аккаунта</Button>
+                        <Button bg='#FFC107' _hover={{ bg: '#BB8E05' }} m={0} fontWeight='400' onClick={Delete}>Выход с аккаунта</Button>
                     </Box>
                 </Box>
 

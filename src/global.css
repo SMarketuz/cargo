@@ -214,6 +214,18 @@ img {
     padding-top: 40px !important;
   }
 }
+@media (max-width: 380px) {
+  .rparent{
+    flex-direction: column;
+    gap: 2px !important;
+  }
+  .rparent button{
+    width: 100px;
+    padding: 0 !important;
+    height: 30px !important;
+    font-size: 12px !important;
+  }
+}
 
 .UserName {
   font-size: 16px;
@@ -265,6 +277,9 @@ ol li {
   }
   .input1::placeholder {
     font-size: 18px !important;
+  }
+  .btn{
+    /* width: 100% !important; */
   }
 }
 @media (max-width: 880px) {
