@@ -103,7 +103,7 @@ const Register = () => {
       </Box>
       <ToastContainer />
 
-      <Box bg='#151B27'  display='flex'  alignItems='center' justifyContent='center' flexDirection='column' w='100%' h={{base: '88vh', md: '100%'}} pt='65.7px'  pb='100px'>
+      <Box bg='#151B27'  display='flex'  alignItems='center' justifyContent='center' flexDirection='column' w='100%' h={{base: '88vh', md: '100%'}} pt='75.7px'  pb='90px'>
         <Box className='TrainImage'>
         </Box>
         <Box className='cregister' zIndex='999' w={{ md: '800px', base: '90%' }} >
