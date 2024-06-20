@@ -33,12 +33,14 @@ const Login = () => {
       phoneNumber: `${value.number}`,
     })
     .then((res) => {
-      if(res.data.status == true) {
+      if(res.data.status === true) {
         toast.success(`Вы вошли в свою учетную запись.`, {
           position: "top-right",
         });
+        console.log(res.data);
         setLoading(false)
             Cookies.set("token", res.data.token);
+            Cookies.set("userId", `${res.data.userId}`)
             Cookies.set("user_id", res.data.user_id);
             Cookies.set("number", value.number);
             navigate('/')

@@ -11,6 +11,7 @@ const GetToken = Cookies.get("token")
     const Delete = () => {
         if(GetToken){
             Cookies.remove("token")
+            Cookies.remove("userId")
             navigator('/')
         
     }
