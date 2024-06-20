@@ -54,7 +54,7 @@ const GetToken = Cookies.get("token")
                         <Text>WhatsApp</Text>
                     </Box>
                 </Box>
-                <Text color='white' fontSize='14px'>© 2023 Все права защищены.</Text>
+                <Text color='white' fontSize='14px'>© 2024 Все права защищены.</Text>
             </Box>
         </Box>
     );
