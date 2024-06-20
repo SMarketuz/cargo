@@ -86,7 +86,7 @@ export default function PersonalPage() {
                 </Box>
 
                 {/* Footer  */}
-                <Box bg='#343A40' display='flex' flexDirection='column' alignItems='center' justifyContent='center' w={{ md: '770px', base: '100%' }} mb='30px' mt='30px' height='13vh'>
+                <Box bg='#343A40' display='flex' flexDirection='column' alignItems='center' justifyContent='center' w={{ md: '770px', base: '100%' }} mb='30px' mt='30px' py={'10px'} height='100%'>
                     <Text color='white' fontSize='14px'>Наши социальные сети</Text>
                     <Box display='flex' alignItems='center' gap='20px' mt='20px'>
                         <Link href='https://www.instagram.com/ritm.cargo?igsh=MWE0eDBldXRna242eQ%3D%3D'>
@@ -103,7 +103,7 @@ export default function PersonalPage() {
                             </Box>
                         </Link>
                     </Box>
-                    <Text color='white' fontSize='14px' mb='20px'>© 2023 Все права защищены.</Text>
+                    <Text color='white' fontSize='14px' mb='20px'>© 2024 Все права защищены.</Text>
                 </Box>
             </Box>
         </Box>
