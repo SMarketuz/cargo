@@ -132,9 +132,9 @@ const Register = () => {
               </Box>
             </Box>
           </Box>
-          <Select className='input1' placeholder='пол' color='white' h='60px' value={gender} onChange={handleChange}>
-            <option className='option' value="male">Male</option>
-            <option className='option' value="female">Female</option>
+          <Select className='input1' placeholder='Пол' color='white' h='60px' value={gender} onChange={handleChange}>
+            <option className='option' value="male">Мужской</option>
+            <option className='option' value="female">Женский</option>
           </Select>
           <Button className='buttonReg' isDisabled={loading} onClick={handleSubmit}>Зарегистрироваться  {loading ? <Spinner /> : '' }</Button>
         </Box>
