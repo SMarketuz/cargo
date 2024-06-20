@@ -40,6 +40,7 @@ const Login = () => {
         setLoading(false)
             Cookies.set("token", res.data.token);
             Cookies.set("user_id", res.data.user_id);
+            Cookies.set("userId", `${res.data.userId}`)
             Cookies.set("number", value.number);
             navigate('/')
           } else {
@@ -63,14 +64,15 @@ const Login = () => {
       <Header />
       </Box>
       <Box
+      pt={'130px'} 
         bg="#151B27"
-        h="88vh"
+        
         display="flex"
         alignItems="center"
         justifyContent="center"
         flexDirection="column"
         w="100%"
-        pb="100px"
+        pb="159px"
       >
         <Box className="TrainImage"></Box>
         <Box

@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box, Heading, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 import Header from '../components/header'
@@ -45,11 +45,19 @@ const Contact = () => {
                 <Text color='white' fontSize='14px'>Наши социальные сети</Text>
                 <Box display='flex' alignItems='center' gap='20px' mt='20px'>
                   
-
-                    <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
-                        <FaWhatsapp />
-                        <Text>WhatsApp</Text>
-                    </Box>
+                <Link href='https://www.instagram.com/ritm.cargo?igsh=MWE0eDBldXRna242eQ%3D%3D'>
+                        <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
+                            <FaInstagram />
+                            <Text>Instagram</Text>
+                        </Box>
+                        </Link>
+                        
+                        <Link href='https://chat.whatsapp.com/DDecveg3dtqK37nLoI1Ktx'>
+                            <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
+                                <FaWhatsapp />
+                                <Text>WhatsApp</Text>
+                            </Box>
+                        </Link>
                 </Box>
                 <Text color='white' fontSize='14px'>© 2023 Все права защищены.</Text>
             </Box>

@@ -69,20 +69,14 @@ export default function PersonalPage() {
                         {/* 1 */}
                         <Box display='flex' alignItems='center' flexDirection='column' gap='8px'>
                             <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Караганда' />
-                            <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Абай /Топар' />
-                            <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Шахтинск / Шахан' />
-                            <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Темиртау' />
-                            <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Сарань' />
+                           
                         </Box>
 
 
                         {/* 2 */}
                         <Box display='flex' alignItems='center' flexDirection='column' gap='8px'>
                             <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Караганда' />
-                            <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Абай /Топар' />
-                            <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Шахтинск / Шахан' />
-                            <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Темиртау' />
-                            <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Сарань' />
+                            
                         </Box>
                     </Box>
 
@@ -95,15 +89,19 @@ export default function PersonalPage() {
                 <Box bg='#343A40' display='flex' flexDirection='column' alignItems='center' justifyContent='center' w={{ md: '770px', base: '100%' }} mb='30px' mt='30px' height='13vh'>
                     <Text color='white' fontSize='14px'>Наши социальные сети</Text>
                     <Box display='flex' alignItems='center' gap='20px' mt='20px'>
+                        <Link href='https://www.instagram.com/ritm.cargo?igsh=MWE0eDBldXRna242eQ%3D%3D'>
                         <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
                             <FaInstagram />
                             <Text>Instagram</Text>
                         </Box>
-
-                        <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
-                            <FaWhatsapp />
-                            <Text>WhatsApp</Text>
-                        </Box>
+                        </Link>
+                        
+                        <Link href='https://chat.whatsapp.com/DDecveg3dtqK37nLoI1Ktx'>
+                            <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
+                                <FaWhatsapp />
+                                <Text>WhatsApp</Text>
+                            </Box>
+                        </Link>
                     </Box>
                     <Text color='white' fontSize='14px' mb='20px'>© 2023 Все права защищены.</Text>
                 </Box>

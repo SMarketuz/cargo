@@ -17,7 +17,7 @@ export default function PersonCard({bg, hoverBg, text, icon  }) {
         padding='8px'
       >
         <span>{icon} </span>
-        Вступить в группу WhatsApp для отслеживания посылок {`${text}`}
+        Вступить в группу WhatsApp для отслеживания посылок 
       </Box>
     </Link>
   );
