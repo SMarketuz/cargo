@@ -63,7 +63,7 @@ const Header = () => {
        <Link to={'/PersonalPage'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Личный кабинет</Heading></Link>
        <Link to={'/Product'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Мои Товары</Heading></Link>
        <Link to={'/AddProduct'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Добавить трек-код</Heading></Link>
-       <Link to={'/contact'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Контакты</Heading></Link>
+       <Link to={'/contact'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Контакты</Heading></Link>
 
           </Box>
           </DrawerBody>
