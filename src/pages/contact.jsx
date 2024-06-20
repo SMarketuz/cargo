@@ -41,7 +41,7 @@ const Contact = () => {
 
 
             {/* Footer  */}
-            <Box bg='#343A40' display='flex' flexDirection='column' alignItems='center' justifyContent='center'  mt='30px' py={'10px'} height='100%'>
+            <Box bg='#343A40' display='flex' flexDirection='column' alignItems='center' justifyContent='center'  mt='30px' py={'19px'} height='100%'>
                 <Text color='white' fontSize='14px'>Наши социальные сети</Text>
                 <Box display='flex' alignItems='center' gap='20px' mt='20px'>
                   
