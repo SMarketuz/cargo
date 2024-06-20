@@ -89,27 +89,27 @@ export default function Product() {
                                 <hr />
                                 <Text display='flex' gap='15px'>
                                     <FaCity size={24} />
-                                    <Text color='#69A17A' fontSize='14px'><strong> Принят на складе Китая</strong></Text>
+                                    <Text color='black' fontSize='14px'><strong> Принят на складе Китая</strong></Text>
                                 </Text>
                                 <hr />
                                 <Text display='flex' gap='15px'>
                                     <FaCity size={24} />
-                                    <Text color='#69A17A' fontSize='14px'><strong>Отправлен со склада Китая</strong></Text>
+                                    <Text color='black' fontSize='14px'><strong>Отправлен со склада Китая</strong></Text>
                                 </Text>
                                 <hr />
                                 <Text display='flex' gap='15px'>
                                     <FaCity size={24} />
-                                    <Text color='#69A17A' fontSize='14px'><strong>В пути</strong></Text>
+                                    <Text color='black' fontSize='14px'><strong>В пути</strong></Text>
                                 </Text>
                                 <hr />
                                 <Text display='flex' gap='15px'>
                                     <FaCity size={24} />
-                                    <Text color='#69A17A' fontSize='14px'><strong>Прибыл в Алмату</strong></Text>
+                                    <Text color='black' fontSize='14px'><strong>Прибыл в Алмату</strong></Text>
                                 </Text>
                                 <hr />
                                 <Text display='flex' gap='15px'>
                                     <FaCity size={24} />
-                                    <Text color='#69A17A' fontSize='14px'><strong>Прибыл в город Караганда</strong></Text>
+                                    <Text color='black' fontSize='14px'><strong>Прибыл в город Караганда</strong></Text>
                                 </Text>
                                 <hr />
                                 <Text color='#6C757d' fontSize='14px'>Цена будет определена в городе Караганда</Text>
