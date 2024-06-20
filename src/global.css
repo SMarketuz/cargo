@@ -312,7 +312,7 @@ ol li {
   border: none !important;
   backdrop-filter: blur(8.5px);
   width: 100% !important;
-  height: 70px;
+  height: 60px;
   padding-left: 40px;
   font-size: 22px !important;
   display: flex !important;
@@ -327,7 +327,7 @@ ol li {
   border: none !important;
   backdrop-filter: blur(8.5px);
   width: 100% !important;
-  height: 70px;
+  height: 60px;
   padding-left: 40px;
   font-size: 22px !important;
   display: flex !important;
@@ -341,7 +341,7 @@ ol li {
 
 .option {
   color: black !important;
-  min-height: 4vw !important;
+  min-height: 60px !important;
   border: none;
   border-radius: 15px !important;
   background: rgba(0, 255, 155, 0.06) !important;
@@ -354,7 +354,7 @@ ol li {
   font-size: 20px !important;
   font-weight: bold !important;
   margin: 0;
-  min-height: 70px !important;
+  min-height: 60px !important;
   border-radius: 15px !important;
   color: #dae6fd !important;
   background: linear-gradient(

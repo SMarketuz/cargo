@@ -40,7 +40,6 @@ const Login = () => {
         setLoading(false)
             Cookies.set("token", res.data.token);
             Cookies.set("user_id", res.data.user_id);
-            Cookies.set("userId", `${res.data.userId}`)
             Cookies.set("number", value.number);
             navigate('/')
           } else {
@@ -60,19 +59,19 @@ const Login = () => {
 
   return (
     <Box>
-      <Box h={'12vh'}>
+      <Box minH={'12vh'}>
       <Header />
       </Box>
       <Box
       pt={'130px'} 
         bg="#151B27"
-        
+        h={{base: '88vh', md: '100%'}}
         display="flex"
         alignItems="center"
         justifyContent="center"
         flexDirection="column"
         w="100%"
-        pb="159px"
+        pb="189px"
       >
         <Box className="TrainImage"></Box>
         <Box

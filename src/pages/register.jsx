@@ -98,13 +98,15 @@ const Register = () => {
   };
   return (
     <Box>
+      <Box minH={'12vh'} >
       <Header />
+      </Box>
       <ToastContainer />
 
-      <Box bg='#151B27' h='88vh' display='flex' alignItems='center' justifyContent='center' flexDirection='column' w='100%' pb='100px'>
+      <Box bg='#151B27'  display='flex'  alignItems='center' justifyContent='center' flexDirection='column' w='100%' h={{base: '88vh', md: '100%'}} pt='65.7px'  pb='100px'>
         <Box className='TrainImage'>
         </Box>
-        <Box className='cregister' zIndex='999' w={{ md: '800px', base: '90%' }}>
+        <Box className='cregister' zIndex='999' w={{ md: '800px', base: '90%' }} >
           <Image src={register} borderRadius='22px' w='100%' />
           <input className='input1' type='text' placeholder='Ваш пароли' onChange={(e) => setValue({ ...value, password: e.target.value })} value={value.password} />
           <input className='input1' type='text' placeholder='Ваш имя' onChange={(e) => setValue({ ...value, name: e.target.value })} value={value.name} />
@@ -115,7 +117,7 @@ const Register = () => {
                 <form onSubmit={handleSubmit} style={{ width: '100%' }} >
                   <Box className="captchaParent" gap={'20px'}>
                     <div id="captcha-container">
-                      <canvas ref={canvasRef} id="captcha" width="130" height="50"></canvas>
+                      <canvas ref={canvasRef} id="captcha" width="140" height="50"></canvas>
                     </div>
                     <input
                       type="text"
@@ -130,7 +132,7 @@ const Register = () => {
               </Box>
             </Box>
           </Box>
-          <Select className='input1' placeholder='пол' color='white' h='70px' value={gender} onChange={handleChange}>
+          <Select className='input1' placeholder='пол' color='white' h='60px' value={gender} onChange={handleChange}>
             <option className='option' value="male">Male</option>
             <option className='option' value="female">Female</option>
           </Select>

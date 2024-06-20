@@ -66,6 +66,6 @@ canvas{
       }
       #captcha-container{
         height: 50px !important;
-        width: 20% !important;
+        width: 180px !important;
       }
 }
