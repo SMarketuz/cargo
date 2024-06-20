@@ -73,7 +73,7 @@ export default function Product() {
                 {/* for Product Card  */}
                 <Box display='flex' alignItems='center' flexDirection='column' gap={'30px'}>
                     {data.length && data.map((item, i) => (
-                        <Box key={i} display={Cookies.get('user_id') === item.userId._id ? 'block' : 'none'}>
+                        <Box key={i} display={Cookies.get('user_id') === item.userId._id ? 'block' : 'none'} >
                             <Box border='1px solid #DFDFDF' padding='20px' borderRadius='8px' display='flex' flexDirection='column' gap='20px' width={{ md: '800px', base: '100%' }} h='100%'>
                                 <Box display='flex' alignItems='center' justifyContent='space-between'>
                                     <Box>
