@@ -1,4 +1,4 @@
-import { Box, Button, Input, Text } from '@chakra-ui/react'
+import { Box, Button, Input, Spinner, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 import Header from '../components/header'
@@ -11,9 +11,11 @@ import Cookies from 'js-cookie';
 
 export default function AddProduct() {
     const [value, setValue] = useState({trecCode:'', name:''})
+    const [loading, setLoading] = useState(false)
 
 
     const handlePost = () => {
+        setLoading(true)
         axios.post(
             `${api}api/product/create`,
             {
@@ -27,14 +29,17 @@ export default function AddProduct() {
             }
         )
         .then((res) => {
+            setLoading(false)
             toast.success(`Трек-код успешно добавлен в Мои товары с локацией "нет данных".`, {
                 position: 'top-right',
             });
+            
 
             // Optionally, you can reset the form fields after successful submission
             setValue({ trecCode: '', name: '' });
         })
         .catch((error) => {
+            setLoading(false)
             toast.error(`Произошла ошибка при добавлении трек-кода.`, {
                 position: 'top-right',
             });
@@ -43,6 +48,7 @@ export default function AddProduct() {
     return (
         <Box>
             <Header />
+            <ToastContainer />
 
         {/* User  */}
             <Box bg='#D1ECF1' padding='12px 20px' display='flex' alignItems='center' margin='0px 0px 16px'>
@@ -50,7 +56,7 @@ export default function AddProduct() {
             </Box>
 
             <Box display='flex' alignItems='center' justifyContent='center'>
-                <Box display='flex' alignItems='' flexDirection='column' justifyContent='center' h='65.5vh' gap='7px'>
+                <Box display='flex' alignItems='' flexDirection='column' justifyContent='center' h='65.2vh' gap='7px'>
                     <Box>
                         <Text fontSize='32px' textAlign='start' color='#212519' margin='0px 0px 8px' mt='25px'>Добавление трек-кода</Text>
                     </Box>
@@ -65,8 +71,8 @@ export default function AddProduct() {
                             <Input value={value.name} onChange={(e) => setValue({...value, name: e.target.value})} border='1px solid black' />
                         </Box>
                     </Box>
-                    <Box display='flex' alignItems='start' justifyContent='start' mt='20px' px={{ md: '0', base: '12px' }}>
-                        <Button bg='#007BFF' _hover={{ bg: '#005FC4' }} color='white' fontWeight='400' onClick={handlePost}>Добавить</Button>
+                    <Box display='flex' alignItems='flex-start' w={'100%'} justifyContent='flex-start' mt='20px' >
+                        <Button isDisabled={loading} bg='#007BFF' _hover={{ bg: '#005FC4' }} m={0} color='white' fontWeight='400' onClick={handlePost}>Добавить   {loading ? <Spinner /> : '' }</Button>
                     </Box>
                 </Box>
             </Box>
@@ -85,7 +91,7 @@ export default function AddProduct() {
                         <Text>WhatsApp</Text>
                     </Box>
                 </Box>
-                <Text color='white' fontSize='14px'>© 2023 Все права защищены.</Text>
+                <Text color='white' fontSize='14px'>© 2024 Все права защищены.</Text>
             </Box>
         </Box>
     )

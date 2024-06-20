@@ -29,17 +29,17 @@ const Header = () => {
         <Box>
           <Link to={'/'}><img src={white} width={"150px"} className='logo' alt="img" /></Link>
         </Box>
-     {show ?     <Box display={'flex'} alignItems={'center'} gap={'3rem'} className='rparent'>
+     {show ?     <Box display={'flex'} alignItems={'center'}  gap={'3rem'} className='rparent'>
        <Link to={'/register'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'24px', base: '20px'}} fontWeight={'600'}>Регистрация</Heading></Link>
        <Link to={'/login'}>
-       <Button className='btn' w={{lg:'190px',base: '140px'}} h={{lg:'57px',base: '45px'}} bg={'#00DA84'} borderRadius={'7px'} style={{fontWeight: '700'}} fontSize={{lg:'22px', base: '17px'}}>Войти</Button>
+       <Button className='btn' w={{lg:'190px',base: '100px'}} h={{lg:'57px',base: '45px'}} bg={'#00DA84'} borderRadius={'7px'} style={{fontWeight: '700'}} fontSize={{lg:'22px', base: '17px'}}>Войти</Button>
        </Link>
         </Box> : 
         <Box >
           <Box display={{base: 'none', md: 'flex'}} alignItems={'center'} gap={'1.5rem'} >
        <Link to={'/PersonalPage'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Личный кабинет</Heading></Link>
        <Link to={'/Product'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Мои Товары</Heading></Link>
-       <Link to={'/AddProduct'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Добавить код</Heading></Link>
+       <Link to={'/AddProduct'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Добавить трек-код</Heading></Link>
        <Link to={'/contact'}><Heading className='register' color={'#00DA84'} fontSize={{lg:'22px', base: '20px'}} fontWeight={'600'}>Контакты</Heading></Link>
           </Box>
           <Box display={{base: 'flex', md: 'none'}} alignItems={'center'} gap={'1rem'} >
@@ -62,7 +62,9 @@ const Header = () => {
           <Box display={'flex'} justifyContent='center' pt='40px' gap={'1.5rem'} flexDirection='column'>
        <Link to={'/PersonalPage'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Личный кабинет</Heading></Link>
        <Link to={'/Product'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Мои Товары</Heading></Link>
-       <Link to={'/AddProduct'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Добавить код</Heading></Link>
+       <Link to={'/AddProduct'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Добавить трек-код</Heading></Link>
+       <Link to={'/contact'}><Heading color={'#00DA84'} fontSize='24px' fontWeight={'600'}>Контакты</Heading></Link>
+
           </Box>
           </DrawerBody>
         </DrawerContent>

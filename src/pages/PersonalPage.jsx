@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/button'
 import { Box, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
-import { fon } from '../assets'
+import { cargo, fon } from '../assets'
 import PersonCard from '../components/PersonCard'
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
@@ -27,19 +27,19 @@ export default function PersonalPage() {
         
       };
      const handleCopy3 = () => {
-        alert('Копировано текст: 崔T826-1307karaganda')
+        alert(`Копировано текст: 铁锤374-${Cookies.get('userId')}`)
         copy("崔T826-1307karaganda");
         
       };
      const handleCopy4 = () => {
-        alert('Копировано текст: 广东省佛山市南海区里水镇草场海南洲工业园76号杨刚仓库转 崔T826-1307karaganda')
-        copy("广东省佛山市南海区里水镇草场海南洲工业园76号杨刚仓库转 崔T826-1307karaganda");
+        alert(`Копировано текст: 里水镇草场海南洲工业园76号杨刚仓库转铁锤 374-${Cookies.get('userId')}`)
+        copy(`里水镇草场海南洲工业园76号杨刚仓库转铁锤 374-${Cookies.get('userId')}`);
         
       };
 
     return (
         <Box>
-            <Header />
+            <Box h={'12vh'}><Header /></Box>
 
              {/* User  */}
              <Box bg='#D1ECF1' padding='12px 20px' display='flex' alignItems='center' margin='0px 0px 16px'>
@@ -51,15 +51,15 @@ export default function PersonalPage() {
                 <Box display='flex' flexDirection='column' >
                     <Text fontSize='24px' textAlign='start' color='#212519' margin='0px 0px 8px' mt='25px'>Заполнение адреса на китайском маркетплейсе:</Text>
                     <ol style={{ fontSize: '14px' }}>
-                        <li ><strong>1. <span className='TextName'> 崔T826-{Cookies.get('userId')}karaganda</span></strong>- ваш личный код, полученный в нашем карго. (по этому номеру вы будете получать  заказы)  <span onClick={handleCopy3} style={{ cursor: 'pointer' }}>📋</span></li>
-                        <li >2.Указываем адрес склада:<strong className='TextName'>15045507371</strong> <span onClick={handleCopy}  style={{ cursor: 'pointer' }}>📋</span> </li>
-                        <li >3.Копируем и вставляем иероглифы<span className='TextName'>广东省 佛山市 南海区</span> <span onClick={handleCopy2} style={{ cursor: 'pointer' }} >📋</span></li>
-                        <li >4.Указываем подробный адрес склада: <span className="TextName"> 广东省佛山市南海区里水镇草场海南洲工业园76号杨刚仓库转 崔T826-1307karaganda </span> <span onClick={handleCopy4} style={{ cursor: 'pointer' }} >📋</span></li>
+                        <li >1.Личный код полученный в нашем карго :  <span className='TextName'>铁锤374-{Cookies.get('userId')} </span>( по этому номеру вы будете получать свои заказы )<span onClick={handleCopy3} style={{ cursor: 'pointer' }}>📋</span></li>
+                        <li >2.Адрес склада:<strong className='TextName'>15045507371</strong> <span onClick={handleCopy}  style={{ cursor: 'pointer' }}>📋</span> </li>
+                        <li >3.Иероглифы вставляем в ручную<span className='TextName'>广东省 佛山市 南海区</span> <span onClick={handleCopy2} style={{ cursor: 'pointer' }} >📋</span></li>
+                        <li >4.Указываем подробный адрес склада :<span className="TextName"> 里水镇草场海南洲工业园76号杨刚仓库转铁锤 374-{Cookies.get('userId')} </span> <span onClick={handleCopy4} style={{ cursor: 'pointer' }} >📋</span></li>
                     </ol>
                 </Box>
 
                 <Box display='flex' alignItems='center' justifyContent='center'>
-                    <Image width={{ md: '765px', base: '100%' }} height={{ md: '780px', base: 'auto' }} mt='30px' src={fon} />
+                    <Image width={{ md: '765px', base: '100%' }} height={{ md: '780px', base: 'auto' }} mt='30px' src={cargo} />
                 </Box>
 
                 {/* Personal Cards  */}
@@ -69,43 +69,41 @@ export default function PersonalPage() {
                         {/* 1 */}
                         <Box display='flex' alignItems='center' flexDirection='column' gap='8px'>
                             <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Караганда' />
-                            <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Абай /Топар' />
-                            <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Шахтинск / Шахан' />
-                            <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Темиртау' />
-                            <PersonCard bg='#007BFF' icon={'📱'} hoverBg='#006ADC' text='Сарань' />
+                           
                         </Box>
 
 
                         {/* 2 */}
                         <Box display='flex' alignItems='center' flexDirection='column' gap='8px'>
                             <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Караганда' />
-                            <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Абай /Топар' />
-                            <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Шахтинск / Шахан' />
-                            <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Темиртау' />
-                            <PersonCard bg='#28A745' icon={'💬'} hoverBg='#1D7A33' text='Сарань' />
+                            
                         </Box>
                     </Box>
 
                     <Box display='flex' alignItems='start' justifyContent='start' mt='20px' px={{ md: '0', base: '12px' }}>
-                        <Button bg='#FFC107' _hover={{ bg: '#BB8E05' }} fontWeight='400' onClick={Delete}>Выход с аккаунта</Button>
+                        <Button bg='#FFC107' _hover={{ bg: '#BB8E05' }} m={0} fontWeight='400' onClick={Delete}>Выход с аккаунта</Button>
                     </Box>
                 </Box>
 
                 {/* Footer  */}
-                <Box bg='#343A40' display='flex' flexDirection='column' alignItems='center' justifyContent='center' w={{ md: '770px', base: '100%' }} mb='30px' mt='30px' height='13vh'>
+                <Box bg='#343A40' display='flex' flexDirection='column' alignItems='center' justifyContent='center' w={{ md: '770px', base: '100%' }} mb='30px' mt='30px' py={'10px'} height='100%'>
                     <Text color='white' fontSize='14px'>Наши социальные сети</Text>
                     <Box display='flex' alignItems='center' gap='20px' mt='20px'>
+                        <Link href='https://www.instagram.com/ritm.cargo?igsh=MWE0eDBldXRna242eQ%3D%3D'>
                         <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
                             <FaInstagram />
                             <Text>Instagram</Text>
                         </Box>
-
-                        <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
-                            <FaWhatsapp />
-                            <Text>WhatsApp</Text>
-                        </Box>
+                        </Link>
+                        
+                        <Link href='https://wa.me/77074691537'>
+                            <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
+                                <FaWhatsapp />
+                                <Text>WhatsApp</Text>
+                            </Box>
+                        </Link>
                     </Box>
-                    <Text color='white' fontSize='14px' mb='20px'>© 2023 Все права защищены.</Text>
+                    <Text color='white' fontSize='14px' mb='20px'>© 2024 Все права защищены.</Text>
                 </Box>
             </Box>
         </Box>
