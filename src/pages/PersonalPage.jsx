@@ -54,7 +54,7 @@ export default function PersonalPage() {
                         <li >1.Личный код полученный в нашем карго :  <span className='TextName'>铁锤374-{Cookies.get('userId')}ritmcargo </span>( по этому номеру вы будете получать свои заказы )<span onClick={handleCopy3} style={{ cursor: 'pointer' }}>📋</span></li>
                         <li >2.Адрес склада:<strong className='TextName'>15045507371</strong> <span onClick={handleCopy}  style={{ cursor: 'pointer' }}>📋</span> </li>
                         <li >3.Иероглифы вставляем в ручную<span className='TextName'>广东省 佛山市 南海区</span> <span onClick={handleCopy2} style={{ cursor: 'pointer' }} >📋</span></li>
-                        <li >4.Указываем подробный адрес склада :<span className="TextName"> 里水镇草场海南洲工业园76号杨刚仓库转铁锤 374-{Cookies.get('userId')}rigtcargo </span> <span onClick={handleCopy4} style={{ cursor: 'pointer' }} >📋</span></li>
+                        <li >4.Указываем подробный адрес склада :<span className="TextName"> 里水镇草场海南洲工业园76号杨刚仓库转铁锤 374-{Cookies.get('userId')}ritmcargo </span> <span onClick={handleCopy4} style={{ cursor: 'pointer' }} >📋</span></li>
                     </ol>
                 </Box>
 
