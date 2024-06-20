@@ -136,7 +136,7 @@ const Register = () => {
             <option className='option' value="male">Male</option>
             <option className='option' value="female">Female</option>
           </Select>
-          <Button className='buttonReg' isDisabled={loading} onClick={handleSubmit}>Зарегистрироватъся  {loading ? <Spinner /> : '' }</Button>
+          <Button className='buttonReg' isDisabled={loading} onClick={handleSubmit}>Зарегистрироваться  {loading ? <Spinner /> : '' }</Button>
         </Box>
       </Box>
     </Box>
