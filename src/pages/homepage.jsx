@@ -11,7 +11,7 @@ const Homepage = () => {
     <Box className=''>
         <Header />
 
-        <Box className='main' bg={'#151B27'} h={{lg:'88vh', base: '100%'}} pt={'20px'} pb={{base: '20px', lg: '0'}}>
+        <Box className='main' bg={'#151B27'} h={{lg:'100%', base: '100%'}} pt={'20px'} pb={{base: '20px', lg: '90px'}}>
           <Box className='pl'
           pl={105} >
 
@@ -34,7 +34,7 @@ const Homepage = () => {
                 <Text pt={'80px'} color={'#707481'} w={''} fontSize={'22px'} fontWeight={'700'} className='dostavka'>Доставка товара из Китая в Казахстан до-15 дней</Text>
               </Box>
 
-              <Box  >
+              <Box  > 
                 <img src={main} className='img' alt="" />
               </Box>
             </Box>
