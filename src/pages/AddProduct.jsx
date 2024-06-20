@@ -1,4 +1,4 @@
-import { Box, Button, Input, Text } from '@chakra-ui/react'
+import { Box, Button, Input, Spinner, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 import Header from '../components/header'
@@ -11,9 +11,11 @@ import Cookies from 'js-cookie';
 
 export default function AddProduct() {
     const [value, setValue] = useState({trecCode:'', name:''})
+    const [loading, setLoading] = useState(false)
 
 
     const handlePost = () => {
+        setLoading(true)
         axios.post(
             `${api}api/product/create`,
             {
@@ -27,14 +29,17 @@ export default function AddProduct() {
             }
         )
         .then((res) => {
+            setLoading(false)
             toast.success(`Трек-код успешно добавлен в Мои товары с локацией "нет данных".`, {
                 position: 'top-right',
             });
+            
 
             // Optionally, you can reset the form fields after successful submission
             setValue({ trecCode: '', name: '' });
         })
         .catch((error) => {
+            setLoading(false)
             toast.error(`Произошла ошибка при добавлении трек-кода.`, {
                 position: 'top-right',
             });
@@ -67,7 +72,7 @@ export default function AddProduct() {
                         </Box>
                     </Box>
                     <Box display='flex' alignItems='flex-start' w={'100%'} justifyContent='flex-start' mt='20px' >
-                        <Button bg='#007BFF' _hover={{ bg: '#005FC4' }} m={0} color='white' fontWeight='400' onClick={handlePost}>Добавить</Button>
+                        <Button isDisabled={loading} bg='#007BFF' _hover={{ bg: '#005FC4' }} m={0} color='white' fontWeight='400' onClick={handlePost}>Добавить   {loading ? <Spinner /> : '' }</Button>
                     </Box>
                 </Box>
             </Box>

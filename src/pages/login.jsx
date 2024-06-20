@@ -98,7 +98,7 @@ const Login = () => {
               <Text color={'white'}>Remember</Text>
            
           </Box>
-          <Button className='buttonReg' disabled onClick={handlePost}>Войти  {loading ? <Spinner /> : '' }</Button>
+          <Button className='buttonReg' isDisabled={loading} onClick={handlePost}>Войти  {loading ? <Spinner /> : '' }</Button>
 
           <Link to={'/register'} style={{color:'#007BFF', fontSize:'16px'}}>Зарегистрироватъся?</Link>
         </Box>
