@@ -96,7 +96,7 @@ export default function PersonalPage() {
                         </Box>
                         </Link>
                         
-                        <Link href='https://chat.whatsapp.com/DDecveg3dtqK37nLoI1Ktx'>
+                        <Link href='https://wa.me/77074691537'>
                             <Box color='white' fontSize='14px' display='flex' alignItems='center' gap='4px'>
                                 <FaWhatsapp />
                                 <Text>WhatsApp</Text>
