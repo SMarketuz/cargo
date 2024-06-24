@@ -24,14 +24,14 @@ const Contact = () => {
                        
                         <Box>
                             <Heading fontWeight={'600'} fontSize={'30px'}>Телефон</Heading>
-                            <Text pt={'7px'} color={'#847BFF'}><a href="https://api.whatsapp.com/send/?phone=77757524176&text&type=phone_number&app_absent=0">Написать в Whatsapp </a> <a href="https://api.whatsapp.com/send/?phone=77086550262&text&type=phone_number&app_absent=0"><br /></a></Text>
+                            <Text pt={'7px'} color={'#847BFF'}><a href="https://wa.me/77074691537">Написать в Whatsapp </a> <a href="https://api.whatsapp.com/send/?phone=77086550262&text&type=phone_number&app_absent=0"><br /></a></Text>
                         </Box>
                     </Box>
 
                     <Box>
                         <Box>
                             <Heading fontWeight={'600'} fontSize={'30px'}>Социальные сети</Heading>
-                            <Text pt={'7px'} color={'#847BFF'}><a href="https://www.instagram.com/2k.cargo">Instagram</a></Text>
+                            <Text pt={'7px'} color={'#847BFF'}><a href="https://www.instagram.com/ritm.cargo?igsh=MWE0eDBldXRna242eQ%3D%3D">Instagram</a></Text>
                         </Box>
                     </Box>
 
