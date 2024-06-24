@@ -28,7 +28,7 @@ export default function PersonalPage() {
       };
      const handleCopy3 = () => {
         alert(`Копировано текст: 铁锤374-${Cookies.get('userId')}`)
-        copy(`崔T826-铁锤374-${Cookies.get('userId')}`);
+        copy(`铁锤374-${Cookies.get('userId')}`);
         
       };
      const handleCopy4 = () => {
