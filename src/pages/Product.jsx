@@ -58,12 +58,12 @@ export default function Product() {
             </Box>
             <Box display='flex' flexDirection='column' alignItems='center' maxH={'100%'} minH={'65.2vh'} >
                 {loading ? <Box display={'flex'} alignItems={'center'} justifyContent={'center'} minH={'65.2vh'}><Spinner
-  thickness='4px'
-  speed='0.65s'
-  emptyColor='gray.200'
-  color='blue.500'
-  size='xl'
-/></Box> : 
+            thickness='4px'
+            speed='0.65s'
+            emptyColor='gray.200'
+            color='blue.500'
+            size='xl'
+            /></Box> : 
                 <Box display='flex' flexDirection='column'>
                 <Box display='flex' alignItems='flex-start' justifyContent='flex-start' flexDirection='column'>
                     <Text fontSize='32px' textAlign='start' color='#212519' margin='0px 0px 8px' mt='25px'>Мои товары</Text>
