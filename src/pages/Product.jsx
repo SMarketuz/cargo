@@ -58,19 +58,6 @@ export default function Product() {
             </Box>
             <Box display='flex' flexDirection='column' alignItems='center' maxH={'100%'} minH={'65.2vh'} >
                 {loading ? <Box display={'flex'} alignItems={'center'} justifyContent={'center'} minH={'65.2vh'}><Spinner
-<<<<<<< HEAD
-            thickness='4px'
-            speed='0.65s'
-            emptyColor='gray.200'
-            color='blue.500'
-            size='xl'
-            /></Box> : 
-                <Box display='flex' flexDirection='column'>
-                <Box display='flex' alignItems='flex-start' justifyContent='flex-start' flexDirection='column'>
-                    <Text fontSize='32px' textAlign='start' color='#212519' margin='0px 0px 8px' mt='25px'>Мои товары</Text>
-                    <Link href='/AddProduct' className='TextName' fontSize='14px'>Добавить трек код</Link>
-                </Box>
-=======
                     thickness='4px'
                     speed='0.65s'
                     emptyColor='gray.200'
@@ -82,7 +69,6 @@ export default function Product() {
                             <Text fontSize='32px' textAlign='start' color='#212519' margin='0px 0px 8px' mt='25px'>Мои товары</Text>
                             <Link href='/AddProduct' className='TextName' fontSize='14px'>Добавить трек код</Link>
                         </Box>
->>>>>>> 8498bf0a999d7f5bca1e4d55196c622022b7ab95
 
                         {/* for Product Card  */}
                         <Box display='flex' alignItems='center' flexDirection='column' gap={'30px'}>
