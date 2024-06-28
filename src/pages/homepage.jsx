@@ -11,7 +11,7 @@ const Homepage = () => {
     <Box className=''>
         <Header />
 
-        <Box className='main' bg={'#151B27'} h={{lg:'88vh', base: '100%', xl: '100%'}} pt={'20px'} pb={{base: '20px', xl: '122px', '2xl': '90px'}}>
+        <Box className='main' bg={'#151B27'} h={{lg:'88vh', base: '100%', 'xl': '100%'}} pt={'20px'} pb={{base: '20px', xl: '122px', '2xl': '145px'}}>
           <Box className='pl'
           pl={105} >
 
